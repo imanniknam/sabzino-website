@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1786551552649,
+      "tag": "0000_bitter_matthew_murdock",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1786553008193,
+      "tag": "0001_conscious_karen_page",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1786553950914,
+      "tag": "0002_fine_karen_page",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1786555200421,
+      "tag": "0003_bright_flatman",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1786555960206,
+      "tag": "0004_wet_plazm",
+      "breakpoints": true
+    }
+  ]
+}

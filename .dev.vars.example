@@ -1,0 +1,3 @@
+# این فایل را با نام .dev.vars در ریشه پروژه و برای VPS در deploy/.dev.vars کپی کنید.
+ZARINPAL_MERCHANT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+PUBLIC_SITE_URL=http://localhost:3000

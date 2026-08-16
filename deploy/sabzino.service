@@ -1,0 +1,19 @@
+[Unit]
+Description=Sabzino ecommerce application
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/sabzino-offline/app
+Environment=NODE_ENV=production
+Environment=COOKIE_SECURE=true
+Environment=WRANGLER_SEND_METRICS=false
+ExecStartPre=/opt/sabzino-offline/runtime/node/bin/node node_modules/wrangler/bin/wrangler.js d1 migrations apply DB --local --persist-to /opt/sabzino-offline/data --config deploy/wrangler.vps.jsonc
+ExecStart=/opt/sabzino-offline/runtime/node/bin/node node_modules/wrangler/bin/wrangler.js dev --local --persist-to /opt/sabzino-offline/data --ip 127.0.0.1 --port 3000 --show-interactive-dev-session=false --log-level warn --config deploy/wrangler.vps.jsonc
+Restart=always
+RestartSec=5
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+.git
+.next
+.vinext
+.wrangler
+dist
+node_modules
+data
+backups
+*.log
+*.tar
+*.tar.gz
+deploy/.wrangler
+.site-package-accounts
+assets-contact-sheet.jpg
+.env*
+!.env.vps.example
